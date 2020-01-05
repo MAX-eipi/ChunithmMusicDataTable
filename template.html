@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<!--__TEMPLATE-TABLE__
+<div class="table">
+%table-body%
+</div>
+-->
+<!--__TEMPLATE-TABLE-ROW__
+<div class="table-row">
+    <div class="table-cell cell-title">%music-name%</div>
+    <ul>
+        <li class="table-cell cell-bas %unverified-basic%">%base-rating-basic%</li>
+        <li class="table-cell cell-adv %unverified-advanced%">%base-rating-advanced%</li>
+        <li class="table-cell cell-exp %unverified-expert%">%base-rating-expert%</li>
+        <li class="table-cell cell-mas %unverified-master%">%base-rating-master%</li>
+    </ul>
+</div>
+-->
+<!--__ TEMPLATE-TABLE__
+<table border="1">
+    <thead>
+        <tr class="table-header">
+            <td class="header-cell header-title">楽曲名</td>
+            <td class="header-cell header-bas">BAS</td>
+            <td class="header-cell header-adv">ADV</td>
+            <td class="header-cell header-exp">EXP</td>
+            <td class="header-cell header-mas">MAS</td>
+        </tr>
+    </thead>
+    <tbody>
+%table-body%
+    </tbody>
+</table>
+-->
+<!--__ TEMPLATE-TABLE-ROW__
+<tr class="table-row">
+    <td class="table-cell cell-title">%music-name%</td>
+    <td class="table-cell cell-bas %unverified-basic%">%base-rating-basic%</td>
+    <td class="table-cell cell-adv %unverified-advanced%">%base-rating-advanced%</td>
+    <td class="table-cell cell-exp %unverified-expert%">%base-rating-expert%</td>
+    <td class="table-cell cell-mas %unverified-master%">%base-rating-master%</td>
+</tr>
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>譜面定数表</title>
+    <link rel="stylesheet" type="text/css" href="table.css" />
+</head>
+<body>
+    <div><h1>チュウニズム 譜面定数表一覧</h1></div>
+    <div><h2>CRYSTAL</h2></div>
+    <hr />
+    <div>
+        <ul class="genre">
+            <li><a href="#pops_and_anime">POP &amp; ANIME</a></li>
+            <li><a href="#niconico">niconico</a></li>
+            <li><a href="#toho_project">東方Project</a></li>
+            <li><a href="#variety">VARIETY</a></li>
+            <li><a href="#irodorimidori">イロドリミドリ</a></li>
+            <li><a href="#gekimai">ゲキマイ</a></li>
+            <li><a href="#original">ORIGINAL</a></li>
+        </ul>
+    </div>
+    <hr />
+    <div align="center">
+        <div class="genre-box">
+            <div class="genre-title"><h1 id="pops_and_anime">POP &amp; ANIME</h1></div>
+            %table(POPS & ANIME)%
+        </div>
+        <div class="genre-box">
+            <div class="genre-title"><h1 id="niconico">niconico</h1></div>
+            %table(niconico)%
+        </div>
+        <div class="genre-box">
+            <div class="genre-title"><h1 id="toho_project">東方Project</h1></div>
+            %table(東方Project)%
+        </div>
+        <div class="genre-box">
+            <div class="genre-title"><h1 id="variety">VARIETY</h1></div>
+            %table(VARIETY)%
+        </div>
+        <div class="genre-box">
+            <div class="genre-title"><h1 id="irodorimidori">イロドリミドリ</h1></div>
+            %table(イロドリミドリ)%
+        </div>
+        <div class="genre-box">
+            <div class="genre-title"><h1 id="gekimai">ゲキマイ</h1></div>
+            %table(ゲキマイ)%
+        </div>
+        <div class="genre-box">
+            <div class="genre-title"><h1 id="original">ORIGINAL</h1></div>
+            %table(ORIGINAL)%
+        </div>
+    </div>
+</body>
+</html>
